@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "foodlink": {
+      "type": "stdio",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": ["${workspaceFolder}\\server.py"],
+      "env": { "FOODLINK_NOW": "2026-11-21T09:00:00" }
+    }
+  }
+}
