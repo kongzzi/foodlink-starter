@@ -31,7 +31,7 @@ python scripts\check_env.py
 
 3. `.vscode/mcp.json`을 열고 `foodlink` 위의 시작(Start)을 누르면 Copilot Agent 모드의 도구 목록에 `foodlink`가 나타납니다. Windows는 `.vscode/mcp.windows.json`의 내용을 `mcp.json`에 복사한 뒤 시작합니다.
 
-자세한 설치 방법과 오류 해결은 학생용 사이트의 설치 가이드와 트러블슈팅 카드를 보세요. 사이트 주소는 강사가 알려 줍니다.
+자세한 설치 방법과 오류 해결은 학생용 사이트의 개발 환경 만들기와 트러블슈팅 카드를 보세요. 사이트 주소는 강사가 알려 줍니다.
 
 ## 폴더 구성
 
