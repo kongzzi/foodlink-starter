@@ -15,9 +15,9 @@ DATA_DIR = Path(os.environ.get("FOODLINK_DATA_DIR", Path(__file__).resolve().par
 HANDOFFS_PATH = Path(os.environ.get("FOODLINK_HANDOFFS", DATA_DIR / "handoffs.json"))
 FRESH_HOURS = 24
 
-# 고객에게 보여도 되는 필드. internal_memo, supply_price, temp_alert 는 절대 포함하지 않는다.
+# 고객에게 보여도 되는 필드. internal_memo, supply_price, temp_alert, partner_code, product_code 는 절대 포함하지 않는다(검색에만 사용).
 PUBLIC_FIELDS = [
-    "order_no", "partner_name", "product_code", "product_name", "qty",
+    "order_no", "partner_name", "product_name", "qty",
     "transport", "scheduled_date", "status", "public_reason", "updated_at",
 ]
 HANDOFF_REASONS = ("주문 없음", "데이터 오래됨", "지연·변경 문의", "기타")
@@ -50,7 +50,7 @@ def freshness(order):
     raise NotImplementedError
 
 
-# TODO (3차시) 주문번호, 거래처명, 상품코드 일부, 상품명으로 주문을 검색한다.
+# TODO (3차시) 주문번호, 거래처 코드, 거래처명, 상품코드, 상품명에서 대소문자 구분 없이 부분 일치로 주문을 검색한다.
 #   반환: {"query", "total", "results", "truncated"}  (results는 최대 limit건)
 def search_orders(query, limit=10):
     raise NotImplementedError
