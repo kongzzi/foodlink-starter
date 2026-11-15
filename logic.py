@@ -73,7 +73,8 @@ def list_handoffs(status=None):
     raise NotImplementedError
 
 
-def update_handoff(handoff_id, status):
+# TODO (8차시) 상태를 바꾼다. note가 있으면 고객에게 보이는 안내 메모로 저장한다(200자 이하, 생략하면 기존 메모 유지).
+def update_handoff(handoff_id, status, note=None):
     raise NotImplementedError
 
 
