@@ -63,6 +63,7 @@ def get_delivery_status(order_no):
 
 
 # TODO (4차시) 이관 요청을 data/handoffs.json에 등록한다. 같은 주문·사유의 미완료 요청은 중복 등록하지 않는다.
+#   주문번호(order_no)가 비어 있으면 등록하지 않고 오류 문장을 반환한다. 이관 요청은 주문 하나에 한 건이다.
 def create_handoff(order_no, reason, summary):
     raise NotImplementedError
 
